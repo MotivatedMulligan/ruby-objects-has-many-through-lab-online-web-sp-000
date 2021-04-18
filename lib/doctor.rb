@@ -22,7 +22,7 @@ end
   end
 
   def patients
-    @appointment.select do |appointment|
+    self.appointment.select do |appointment|
       appointment.patient
     end
   end
