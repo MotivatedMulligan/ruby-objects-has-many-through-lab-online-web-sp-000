@@ -8,6 +8,6 @@ class Appointment
     @@all << self
   end
   def self.all
-    @@all.appointment
+    @@all
   end
 end
