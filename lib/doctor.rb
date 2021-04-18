@@ -22,7 +22,7 @@ end
   end
 
   def patients
-    self.appointment.select do |appointment|
+    self.appointment.map do |appointment|
       appointment.patient
     end
   end
