@@ -21,5 +21,5 @@ end
    self.songs.map {|song| song.genre}
    end
 
-   
+
 end
