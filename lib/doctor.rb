@@ -3,8 +3,12 @@ class Doctor
   attr_accessor :name, :appointments, :patient, :date
   def initialize(name)
     @name = name
-    Doctor.all << self
+    @@all << self
   end
+  # def initialize(name)
+  #   @name = name
+  #   @@all << self
+  # end
   def appointments
 Appointment.all.select do |apppointments| appointments.doctor = self
 end
