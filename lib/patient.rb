@@ -14,7 +14,7 @@ class Patient
    @@all
   end
 #####
-  def qppointments
+  def appointments
     Appointment.all.select do |appointment|
       appointment.patient == self
     end
