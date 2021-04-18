@@ -21,7 +21,7 @@ end
    Appointment.new(date, patient, self)
   end
   def patients
-    @appointment.collect do |appointment|
+    @appointment.select do |appointment|
       appointment.patient
     end
   end
